@@ -13,7 +13,7 @@ This repository covers the **end-to-end** process of building a genre classifica
 ✅ **Model Training & Tuning** 🤖 – Training multiple models with hyperparameter tuning.  
 ✅ **Evaluation & Analysis** 📊 – Comparing model performance and visualizing results.  
 
-[model accuracy comparision result](results/plots/model_performance_comparison.png)
+![model accuracy comparision result](results/plots/model_performance_comparison.png)
 ---
 
 ## 📂 Directory Structure
