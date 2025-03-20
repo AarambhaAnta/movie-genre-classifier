@@ -90,7 +90,7 @@ Enter a movie description (or type 'exit' to quit): A spaceship crew explores a 
 Enter a movie description (or type 'exit' to quit): exit
 Goodbye! 🎬
 ```
-[utility app working](results/videos/movie_genre_classification.mov)
+![utility app working](results/movie_genre_classification.mov)
 
 ---
 
