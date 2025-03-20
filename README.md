@@ -90,7 +90,7 @@ Enter a movie description (or type 'exit' to quit): A spaceship crew explores a 
 Enter a movie description (or type 'exit' to quit): exit
 Goodbye! 🎬
 ```
-![utility app working](results/plots/movie_genre_classification.mov)
+[![🚀 Movie Genre Classification & CLI utils | Machine Learning Model in Action 🎬](https://www.youtube.com/embed/VsDferYnm4I/maxresdefault.jpg)](https://www.youtube.com/embed/VsDferYnm4I)
 
 ---
 
