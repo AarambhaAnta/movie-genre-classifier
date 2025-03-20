@@ -2,7 +2,7 @@ from model import load_model, load_vectorizer, predict_genre
 
 # Define paths
 MODEL_PATH = "./models/saved_models/linearsvc_best.pkl"
-VECTORIZER_PATH = "./models/saved_models/tfidf_vectorizer.pkl"
+VECTORIZER_PATH = "./models/tfidf_vectorizer.pkl"
 
 # Load model and vectorizer
 model = load_model(MODEL_PATH)

@@ -8,9 +8,9 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Ensure necessary NLTK resources are available
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 # Initialize stopwords and lemmatizer
 stop_words = set(stopwords.words('english'))
@@ -46,7 +46,7 @@ def clean_text(text: str) -> str:
 
     return " ".join(words)
 
-def parallel_clean(df, text_column):
+def clean_text_parallel(df, text_column, new_column_name):
     """
     Applies clean_text function to a dataframe column in parallel.
     
@@ -57,7 +57,7 @@ def parallel_clean(df, text_column):
     Returns:
         pd.DataFrame: Dataframe with cleaned text.
     """
-    df[text_column] = df[text_column].swifter.apply(clean_text)
+    df[new_column_name] = df[text_column].swifter.apply(clean_text).tolist()
     return df
 
 # Example usage
@@ -74,11 +74,11 @@ if __name__ == "__main__":
     
     df = pd.DataFrame(sample_data)
     
-    print("Before Cleaning:")
+    print("Before Cleaning:")   
     print(df.head())
 
     # Apply parallel cleaning
-    df = parallel_clean(df, "Description")
+    df = clean_text_parallel(df, "Description")
 
     print("\nAfter Cleaning:")
     print(df.head())
